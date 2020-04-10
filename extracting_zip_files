@@ -4,7 +4,7 @@
 from zipfile import ZipFile
 
 # path to the zipfile
-file = './Importing files.zip'
+file = './files.zip'
 
 # read zipfile and extract contents
 with ZipFile (file, 'r') as zip:
