@@ -16,17 +16,17 @@ readlines() – This function reads the complete information in the file but unl
 """
 
 # read text file
-with open(r'./Importing files/Analytics Vidhya.txt','r') as f:
+with open(r'./files/file.txt','r') as f:
     print(f.read())
     
     
 # read text file
-with open(r'./Importing files/Analytics Vidhya.txt','r') as f:
+with open(r'./files/file.txt','r') as f:
     print(f.read(10))
     
  
 # read text file
-with open(r'./Importing files/Analytics Vidhya.txt','r') as f:
+with open(r'./files/file.txt','r') as f:
     print(f.readline())
     
     
