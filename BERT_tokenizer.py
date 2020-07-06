@@ -13,3 +13,12 @@ def get_tokenizer(bert_path=BERT_PATH_SAVEDMODEL):
     return tokenizer
 
 tokenizer = get_tokenizer()
+
+example_sentence = wiki_toxic_comment_train.iloc[37].comment_text[:150]
+print(example_sentence)
+
+example_tokens = tokenizer.tokenize(example_sentence)
+print(example_tokens[:17])
+
+example_input_ids = tokenizer.convert_tokens_to_ids(example_tokens)
+print(example_input_ids[:17])
