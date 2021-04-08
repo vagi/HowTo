@@ -1,4 +1,5 @@
-# All data to be mapped to float or integers (in case we will normalize whole dataset) and drop the unrequired columns.
+# All data to be mapped to float or integers (in case we will normalize whole dataset)
+# and drop the unrequired columns.
 
 # First map the string values of target to integer (we have categorical values here) .
 

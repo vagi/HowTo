@@ -1,5 +1,6 @@
 # Importing data from database using SQLite3
-# A good practice is to save/commit your transactions using the commit() function even if you are only reading the data.
+# A good practice is to save/commit your transactions using the commit() function
+# even if you are only reading the data.
 
 import pandas as pd
 import sqlite3
@@ -20,4 +21,4 @@ df = pd.DataFrame(rs.fetchall())
 con.commit()
 
 # Print head of DataFrame df
-df
+df.head()
