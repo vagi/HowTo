@@ -46,6 +46,7 @@ Let’s try and store these in a local folder.
 We will need the Python urllib library to retrieve the URL of the images that we want to store. 
 It has a urllib.request() function that is used for opening and reading URLs. Calling the urlretrieve() 
 function on this object allows us to download objects denoted by the URL to a local file:
+"""
 
 import urllib
 
@@ -66,6 +67,7 @@ def download_img(url, i):
 The images are stored in the “img” tag in HTML. These can be found by calling find_all() 
 on the soup object. After this, we can iterate over the image and get its source by calling 
 the get() function on the image object. The rest is handled by our download function:
+"""
 
 images = soup.find_all('img')
 i = 1
@@ -75,8 +77,6 @@ for image in images[2:10]:
         i = i+1
     except: 
         continue
-        
-
 
 
 
