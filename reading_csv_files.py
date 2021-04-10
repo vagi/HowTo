@@ -7,7 +7,8 @@ import pandas as pd
 df = pd.read_csv(r'./files/data.csv')
 
 # display DataFrame
-df
+df.head()
+df.tail()
 
 
 """
@@ -18,4 +19,11 @@ the delimiter in the parameter value as shown below while reading a TSV (Tab Sep
 """ 
 
 df = pd.read_csv(r'./files/file.txt',delimiter='\t')
-df
+df.head()
+
+
+"""
+Reading CSV file in Russian language - encoding cp1251
+"""
+df = pd.read_csv("file.csv", encoding='cp1251', delimiter=';')
+
